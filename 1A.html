@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+        <h2>Motivo do contato</h2>
         <P>Operador: "Obrigado pelas informações, Informo que por medidas de segurança a ligação poderá ser gravada.”</P>
         <P>"Sr(a) ____, verifico em sistema que o contato é referente ao seu cartão de crédito (Informar o Cartão/Bandeira),
             com xx dias em atraso, no valor de R$ xx,xx (Reais e centavos). É possível o pagamento total entre hoje e
@@ -18,9 +19,14 @@
             <div class="btn">
         <a href="2A.html"><input type="button" value="SIM"></a>
         <a href="quantosDiasAtraso.html"><input type="button" value="NÃO"> </a>
-        <a href="index.html"><input type="button" value="VOLTAR"> </a>
+        <button  onclick="goBack()">VOLTAR</button>
     </div>
     </div>
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+        </script>
 
 </body>
 

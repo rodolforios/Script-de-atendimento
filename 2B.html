@@ -12,6 +12,7 @@
 <body>
 
     <div class="container">
+        <h2>Valor e prazo intermediário</h2>
         <p><strong>Sondagem:</strong> "Para que eu possa compreender melhor a situação e te auxiliar da melhor forma possível, qual foi o
             motivo do atraso?"</p>
         <em>OBS: Acolhimento conforme motivo do atraso. (Desemprego, falta de dinheiro, dívidas, doença...)</em>
@@ -28,10 +29,15 @@
     <div class="btn">
     <a href="2A.html"><input type="button" value="SIM"></a>
     <a href="3B.html"><input type="button" value="NÃO"> </a>
-    <a href="index.html"><input type="button" value="VOLTAR"> </a>
+    <button  onclick="goBack()">VOLTAR</button>
     <a href="index.html"><input type="button" value="HOME"> </a>
 </div>
 </div>
 </body>
+<script>
+    function goBack() {
+        window.history.back()
+    }
+    </script>
 
 </html>

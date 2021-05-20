@@ -12,6 +12,7 @@
 
     <body>
         <div class="container">
+            <h2>Não confirmou PID</h2>
         <p>
             Caso o Sr prefira, poderá contatar a nossa central de atendimento através dos telefones que se encontrarm no verso
             do cartão(informar a loja parceira) em horário comercial. Mas por gentileza retorne com máxima urgência.
@@ -20,11 +21,17 @@
     
         <div class="btn">
         <a href="1A.html"><input type="button" value="SIM"></a>
+        <button  onclick="goBack()">VOLTAR</button>
     
         <a href="index.html"><input type="button" value="HOME"> </a>
     </div>
     
-    
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+        </script>
+
 </div>
 </body>
 

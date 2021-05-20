@@ -12,6 +12,7 @@
 <body>
 
      <div class="container">
+         <h2>Argumento PID</h2>
         <em>
             Caso o cliente não sinta segurança em passar informação podemos informar os três primeiros dígitos do CPF, e o
             mesmo
@@ -24,10 +25,17 @@
         <div class="btn">
         <a href="1A.html"><input type="button" value="SIM"></a>
         <a href="1B1.html"><input type="button" value="NÃO"> </a>
+        <button  onclick="goBack()">VOLTAR</button>
         <a href="index.html"><input type="button" value="HOME"> </a>
+        
     </div>
     </div>
 
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+        </script>
 
 
 </body>
