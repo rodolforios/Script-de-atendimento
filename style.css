@@ -1,13 +1,16 @@
-#containerPrincipal{
-    max-width:400px;
-    margin:0 auto;
+.containerPrincipal {
+    padding: 15px;
+    max-width: 450px;
+    margin: 10px auto;
+    border-radius: 40px;
+    background: #101022;
+    box-shadow: 14px 14px 43px #07070f, -14px -14px 43px #191935;
 }
 
-h2,h4{
+h2, h4 {
     text-align: center;
 }
-.btnAlign{
+
+.btnAlign {
     text-align: center;
 }
-
-
