@@ -1,116 +1,13 @@
-.container {
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 41px 41px 82px #bebebe, -41px -41px 82px #ffffff;
-    width: 80%;
-    height: auto;
-    margin: 2em auto;
-    padding: 3%;
+#containerPrincipal{
+    max-width:400px;
+    margin:0 auto;
 }
-.container h2{
+
+h2,h4{
     text-align: center;
-    
-
 }
-.container p{
-    text-align: justify;
-    padding:10% auto;
-    word-spacing: 0.3em;
+.btnAlign{
     text-align: center;
-    margin: 10% auto;
-    
-
-}
-.container em{
-    text-align: justify;
-    padding:10% auto;
-    word-spacing: 0.3em;
-    text-align: center;
-    display: flex;    
-    justify-content: center;
-    
-    
-
 }
 
 
-.btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15% 0;
-}
-
-.btn input {
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    width: 100%;
-    
-    color: #0a0909;
-    font-size: 18px;
-    font-weight: bold;
-    cursor:pointer;
-}
-
-.btn button{
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    width: auto;
-    
-    color: #0a0909;
-    font-size: 18px;
-    font-weight: bold;
-    cursor:pointer;
-
-
-}
-
-@media (min-width: 1024px){
-    .container{
-
-        width: 900px;
-        height: 600px;
-    }
-
-    
-
-    .container h2{
-        font-size: 36px;
-        margin: 3% 0;
-        
-        
-    
-    }
-    .container p{
-
-        font-size: 23px;
-        margin: 3% 0; 
-          
-        
-    
-    }
-    .container em{
-
-        font-size: 23px;
-        margin: 3% 0;
-        
-        
-                
-    
-    }
-    .btn {
-        
-        font-size: 23px;
-        margin: 3% 0;
-        
-        
-
-
-    }
-    
-
-    
-
-}
