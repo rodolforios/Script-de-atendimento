@@ -7,10 +7,24 @@
     box-shadow: 14px 14px 43px #07070f, -14px -14px 43px #191935;
 }
 
-h2, h4 {
+h2, h4,h3 {
     text-align: center;
 }
 
 .btnAlign {
     text-align: center;
 }
+
+.containerPrincipal p {
+    text-align: justify;
+    padding: 10% auto;    
+    margin: 10% auto;
+}
+
+.containerPrincipal em {
+    text-align: justify;
+    padding: 10% auto;
+    word-spacing: 0.3em;   
+    margin: 10%;
+}
+
