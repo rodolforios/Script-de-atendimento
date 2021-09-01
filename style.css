@@ -28,3 +28,7 @@ h2, h4,h3 {
     margin: 10%;
 }
 
+.input-group{
+    margin: 10px auto;
+    width:50%
+}

@@ -23,31 +23,61 @@
 
 <body>
   <!-- Start your project here-->
-  <div class="containerPrincipal">
-    
-        <h2 class="mt-2">Recado</h2>
-
-       
-
-       
-        <div class="btnAlign">
-
-            <button class="btn btn-primary  mt-5" onclick="goBack()">VOLTAR</button>
+  <form action="#">
+    <div class="containerPrincipal">
+      <h2 class="mt-2">Recado</h2>
+      <!-- Inicio Valor a vista-->
+      <div class="input-group w-50">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
         </div>
-
-
-
+        <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor total">
+        <div class="input-group-append">
+          <span class="input-group-text">,00</span>
+        </div>
+      </div>
+      <!-- Fim Valor a vista-->
     
+      <!-- Inicio Desconto-->
+      <div class="input-group w-50">
+        
+        <input class="form-control" pattern="[0-9]*" inputmode="numeric"type="text" placeholder="Desconto">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+
+      <!-- Fim Desconto-->
+
+      <!-- Inicio Pagamento a vista-->
 
 
-    </script>
+      <!-- Fim Pagamento a vista-->
 
+      <!-- Inicio-->
+
+       <!-- Fim-->
+      
+  </form>
+
+    <div class="btnAlign">
+
+      <button class="btn btn-primary  mt-5" onclick="goBack()">VOLTAR</button>
     </div>
-    <script>
-        function goBack() {
-            window.history.back()
-        }
+
+
+
+
+
+
     </script>
+
+  </div>
+  <script>
+    function goBack() {
+      window.history.back()
+    }
+  </script>
 
   </div>
   <!-- End your project here-->
