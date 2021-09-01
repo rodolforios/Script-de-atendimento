@@ -37,11 +37,11 @@
         </div>
       </div>
       <!-- Fim Valor a vista-->
-    
+
       <!-- Inicio Desconto-->
       <div class="input-group w-50">
-        
-        <input class="form-control" pattern="[0-9]*" inputmode="numeric"type="text" placeholder="Desconto">
+
+        <input class="form-control" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="Desconto">
         <div class="input-group-append">
           <span class="input-group-text">%</span>
         </div>
@@ -50,27 +50,95 @@
       <!-- Fim Desconto-->
 
       <!-- Inicio Pagamento a vista-->
-
+      <div class="input-group w-50">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor a vista">
+        <div class="input-group-append">
+          <span class="input-group-text">,00</span>
+        </div>
+      </div>
 
       <!-- Fim Pagamento a vista-->
 
-      <!-- Inicio-->
+      <!-- Inicio Vencimento-->
+      <div class="form-outline w-50">
+        <input type="date" id="form1" class="form-control" />
+      </div>
 
-       <!-- Fim-->
+      <!-- Fim Vencimento-->
+      <!-- Inicio Taxa de Juros-->
+      <div class="input-group w-50">
+
+        <input class="form-control" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="Taxa de juros Mês">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+
+      <!-- Fim Taxa de juros-->
+
+      <!-- Inicio porcentagem CET Mensal-->
+      <div class="input-group w-50">
+
+        <input class="form-control" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Mensal">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+      <!-- Fim porcentagem CET Mensal-->
+      <!-- Inicio valor CET Mensal-->
+      <div class="input-group w-50">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Mensal">
+        <div class="input-group-append">
+          <span class="input-group-text">,00</span>
+        </div>
+      </div>
+
+      <!-- Fim valor CET Mensal-->
+
+      <!-- Inicio porcentagem CET Anual -->
+      <div class="input-group w-50">
+
+        <input class="form-control" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Mensal">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+      <!-- Fim porcentagem CET Anual -->
+      <!-- Inicio valor CET Anual-->
+      <div class="input-group w-50">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Anual">
+        <div class="input-group-append">
+          <span class="input-group-text">,00</span>
+        </div>
+        
+      </div>
+      <!-- Fim CET Anual-->
+      <!-- Gerar Script-->
       
+      <!-- Fim Gerar Script-->
+
   </form>
+  <div class="btnAlign"><button class="btn btn-success  w-50  " onclick="goBack()">Gerar Script</button></div>
+  <div class="btnAlign">
 
-    <div class="btnAlign">
-
-      <button class="btn btn-primary  mt-5" onclick="goBack()">VOLTAR</button>
-    </div>
-
-
+    <button class="btn btn-danger  mt-5" onclick="goBack()">VOLTAR</button>
+  </div>
 
 
 
 
-    </script>
+
+
+  </script>
 
   </div>
   <script>
