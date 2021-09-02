@@ -16,13 +16,13 @@ function gerarScript() {
   vTot = Number(vTot.value)
   var valorTotal = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
-  
+
   //Desconto
   var descont = document.getElementById('desc')
   var desconto = Number(descont.value)
 
-  
-  
+
+
 
   //valor a vista
   var valA = document.getElementById('vA')
@@ -30,12 +30,12 @@ function gerarScript() {
   var valorVista = valA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   //Data
-  
+
   var dataInput = document.getElementById('venc')
   dataInput = dataInput.value
   data = new Date(dataInput);
-  dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
-  
+  dataFormatada = data.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+
   //Taxa de Juros
   var taxJur = document.getElementById('tJuros')
   var taxaDeJuros = Number(taxJur.value)
@@ -55,7 +55,7 @@ function gerarScript() {
   valorCetA = Number(valorCetA.value)
   var valorCetAnual = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
-res.innerHTML=`<h2 class="mt-2">Bacen A vista</h2>
+  res.innerHTML = `<h2 class="mt-2">Bacen A vista</h2>
 <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de ${valorTotal} </p>
 <p>Com desconto de ${desconto}% (por cento - quando houver).</p>
 <p>"Assim, estou confirmando em sistema o ACORDO de seu cartão (nome e bandeira do cartão)</p>
@@ -86,9 +86,9 @@ res.innerHTML=`<h2 class="mt-2">Bacen A vista</h2>
 
 }
 
-function Avista(){
+function Avista() {
 
-  bacenPadrao.innerHTML=` 
+  bacenPadrao.innerHTML = ` 
   <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de R$ XX,XX</p>
 
         <p>Com desconto de XX% (por cento - quando houver).</p>
@@ -136,9 +136,9 @@ function Avista(){
 
 }
 
-function comEntrada(){
+function comEntrada() {
 
-  bacenPadrao.innerHTML=`
+  bacenPadrao.innerHTML = `
   <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de R$ XX,XX</p>
 
         <p>Com desconto de XX% (por cento - quando houver).</p>
@@ -198,8 +198,8 @@ function comEntrada(){
 
 }
 
-function semEntrada(){
-  bacenPadrao.innerHTML=`
+function semEntrada() {
+  bacenPadrao.innerHTML = `
   <p>Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de R$ XX,XX</p>
 
         <p>Com desconto de XX% (por cento - quando houver).</p>
@@ -249,12 +249,12 @@ function semEntrada(){
   
   
   `
-  
+
 }
 
 function geradorBacenAvista() {
 
-  geradorBacen.innerHTML=`
+  geradorBacen.innerHTML = `
   
   
  
@@ -296,9 +296,12 @@ function geradorBacenAvista() {
 
       <!-- Inicio Vencimento-->
       <div class="form-outline w-75">
-        <input type="date"  id="venc" class="form-control" />
+
+      <div class="form-outline">
+  <input type="date" id="venc" class="form-control" />
+  <label class="form-label" for="form1">Vencimento📆</label>
+</div>
         
-        <label class="form-label " for="form1">Vencimento📆</label>
       
       </div>
       
