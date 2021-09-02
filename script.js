@@ -20,7 +20,8 @@ function gerarScript() {
   //Desconto
   var descont = document.getElementById('desc')
   var desconto = Number(descont.value)
-
+  //Entrada
+  
 
 
 
@@ -369,5 +370,10 @@ function geradorBacenAvista() {
   </form>
   `
 
+
+}
+
+function geradorBacenComEntrada() {
+  geradorBacen.innerHTML = ``
 
 }
