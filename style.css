@@ -33,3 +33,8 @@ h2, h4,h3 {
     width:50%
 }
 
+
+input[type="date"]:not(:valid):before {
+   content: attr(placeholder);
+    
+}

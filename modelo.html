@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
   <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
@@ -61,9 +62,13 @@
       <!-- Inicio Vencimento-->
       <div class="form-outline w-75">
         <input type="date"  id="venc" class="form-control" />
-        <label class="form-label" for="form1">Vencimento</label>
+        
+        <label class="form-label " for="form1">📆</label>
+      
       </div>
-
+      
+      
+      
       <!-- Fim Vencimento-->
       <!-- Inicio Taxa de Juros-->
       <div class="input-group w-75">
@@ -91,9 +96,7 @@
           <span class="input-group-text">R$</span>
         </div>
         <input class="form-control" id="vCetMens" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Mensal">
-        <div class="input-group-append">
-          <span class="input-group-text">,00</span>
-        </div>
+        
       </div>
 
       <!-- Fim valor CET Mensal-->
@@ -101,7 +104,7 @@
       <!-- Inicio porcentagem CET Anual -->
       <div class="input-group w-75">
 
-        <input class="form-control" id="cetAnuPct" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Mensal">
+        <input class="form-control" id="cetAnuPct" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Anual">
         <div class="input-group-append">
           <span class="input-group-text">%</span>
         </div>
@@ -114,9 +117,7 @@
           <span class="input-group-text">R$</span>
         </div>
         <input class="form-control" id="vCetAnu" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Anual">
-        <div class="input-group-append">
-          <span class="input-group-text">,00</span>
-        </div>
+        
 
       </div>
 
