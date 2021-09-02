@@ -30,8 +30,12 @@ h2, h4, h3 {
 
 .input-group, .form-outline {
     margin: 10px auto;
-    width: 50%
+    width: 50%;
 }
+
+
+
+
 
 input[type=date]::-webkit-datetime-edit-text {
     -webkit-appearance: none;
