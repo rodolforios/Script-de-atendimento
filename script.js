@@ -1,6 +1,8 @@
 
 var res = document.querySelector('div#res')
 var bacenPadrao = document.querySelector('div#scriptBacen')
+var geradorBacen = document.querySelector('div#gerBacen')
+
 
 
 function goBack() {
@@ -250,4 +252,119 @@ function semEntrada(){
   
 }
 
+function geradorBacenAvista() {
 
+  geradorBacen.innerHTML=`
+  
+  
+ 
+
+
+
+
+<!-- Inicio Valor a vista-->
+      <div class="input-group w-75">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" id="vTot" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor total">
+        
+      </div>
+      <!-- Fim Valor a vista-->
+
+      <!-- Inicio Desconto-->
+      <div class="input-group w-75">
+
+        <input class="form-control" id="desc" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="Desconto">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+
+      <!-- Fim Desconto-->
+
+      <!-- Inicio Pagamento a vista-->
+      <div class="input-group w-75">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" id="vA" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor a vista">
+        
+      </div>
+
+      <!-- Fim Pagamento a vista-->
+
+      <!-- Inicio Vencimento-->
+      <div class="form-outline w-75">
+        <input type="date"  id="venc" class="form-control" />
+        
+        <label class="form-label " for="form1">Vencimento📆</label>
+      
+      </div>
+      
+      
+      
+      <!-- Fim Vencimento-->
+      <!-- Inicio Taxa de Juros-->
+      <div class="input-group w-75">
+
+        <input class="form-control" id="tJuros" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="Taxa de juros Mês">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+
+      <!-- Fim Taxa de juros-->
+
+      <!-- Inicio porcentagem CET Mensal-->
+      <div class="input-group w-75">
+
+        <input class="form-control" id="cetMenPct" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Mensal">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+      <!-- Fim porcentagem CET Mensal-->
+      <!-- Inicio valor CET Mensal-->
+      <div class="input-group w-75">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" id="vCetMens" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Mensal">
+        
+      </div>
+
+      <!-- Fim valor CET Mensal-->
+
+      <!-- Inicio porcentagem CET Anual -->
+      <div class="input-group w-75">
+
+        <input class="form-control" id="cetAnuPct" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="CET Anual">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+      <!-- Fim porcentagem CET Anual -->
+
+      <!-- Inicio valor CET Anual-->
+      <div class="input-group w-75">
+        <div class="input-group-pretend">
+          <span class="input-group-text">R$</span>
+        </div>
+        <input class="form-control" id="vCetAnu" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valor CET Anual">
+        
+
+      </div>
+
+
+      <!-- Fim CET Anual-->
+      <!-- Gerar Script-->
+      <div class="btnAlign"><input class="btn btn-success  w-75 " type="submit" value="Gerar Script" onclick="gerarScript()"></div>
+
+      <!-- Fim Gerar Script-->
+
+  </form>
+  `
+
+
+}
