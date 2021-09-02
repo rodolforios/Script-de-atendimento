@@ -11,11 +11,11 @@ function gerarScript() {
   vTot = Number(vTot.value)
   var valorTotal = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
-  //res.innerHTML=`valor total ${valorTotal}`
+  
   //Desconto
   var desconto = document.getElementById('desc')
   
-  res.innerHTML=` Desconto ${desconto}%`
+  
 
   //valor a vista
   var valA = document.getElementById('vA')
@@ -23,10 +23,12 @@ function gerarScript() {
   var valorVista = valA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   //Data
-  var venciment = document.getElementById('venc')
-  var vencimento = venciment.value
-
   
+  var dataInput = document.getElementById('venc')
+  dataInput = dataInput.value
+  data = new Date(dataInput);
+  dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+  res.innerHTML=`${dataFormatada}`
   //Taxa de Juros
   var taxJur = document.getElementById('tJuros')
   var taxaDeJuros = Number(taxJur.value)
