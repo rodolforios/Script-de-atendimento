@@ -5,6 +5,7 @@
     border-radius: 40px;
     background: #101022;
     box-shadow: 14px 14px 43px #07070f, -14px -14px 43px #191935;
+    
 }
 
 h2, h4, h3 {
@@ -57,5 +58,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
     display: none;
 }
 
-
+.menuBacen{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
