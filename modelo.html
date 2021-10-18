@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Recado</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="" type="" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- Dark MDB theme -->
+    <link rel="stylesheet" href="css/mdb.dark.min.css" />
+    <!-- Regular MDB theme -->
+    <!-- <link rel="stylesheet" href="css/mdb.min.css" /> -->
+</head>
+
+<body>
+    <!-- Start your project here-->
+    <div class="containerPrincipal">
+        
+        < !--Valor total-- >
+        <div class="input-group w-75">
+            <div class="input-group-pretend">
+                <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" id="vTot" type="text" pattern="[0-9]*" inputmode="numeric"
+                placeholder="Valor total">
+
+        </div>
+        <!--Fim Valor total-- >
+
+        < !--Desconto -->
+        <div class="input-group w-75">
+
+            <input class="form-control" id="desc" pattern="[0-9]*" inputmode="numeric" type="text"
+                placeholder="Desconto">
+            <div class="input-group-append">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+        <!--Fim desconto-->
+
+         <!--Valor Primeira parcela-- >
+        <div class="input-group w-75">
+            <div class="input-group-pretend">
+                <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" id="vE" type="text" pattern="[0-9]*" inputmode="numeric"
+                placeholder="Valor Primeira parcela">
+
+        </div>
+        <!--Fim valor Primeira parcela-- >
+        
+
+        < !--Data Primeira parcela-- >
+        <div class="form-outline w-75">
+
+            <div class="form-outline">
+                <input type="date" id="venc" class="form-control" />
+                <label class="form-label" for="form1">Data da Primeira📆</label>
+            </div>
+
+
+        </div>
+        <!--fim data Primeira parcela-- >
+
+        < !--quantidade de parcelas-- >
+        <div class="input-group w-75">
+
+            <input class="form-control" id="qtP" type="text" pattern="[0-9]*" inputmode="numeric"
+                placeholder="Quantidade de parcelas">
+
+        </div>
+
+        <!--Fim quantidade de parcelas-- >
+
+               < !--taxa de juros mês-- >
+        <div class="input-group w-75">
+
+            <input class="form-control" id="tJuros" pattern="[0-9]*" inputmode="numeric" type="text"
+                placeholder="Taxa de juros Mês">
+            <div class="input-group-append">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+        <!--Fim taxa de juros mês-- >
+
+        < !--% CET mensal-- >
+        <div class="input-group w-75">
+
+            <input class="form-control" id="cetMenPct" pattern="[0-9]*" inputmode="numeric" type="text"
+                placeholder="CET Mensal">
+            <div class="input-group-append">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+        <!--fim % CET mensal-- >
+
+        < !--valor CET mensal-- >
+        <div class="input-group w-75">
+            <div class="input-group-pretend">
+                <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" id="vCetMens" type="text" pattern="[0-9]*" inputmode="numeric"
+                placeholder="Valor CET Mensal">
+
+        </div>
+        <!--fim valor Cet mensal-- >
+
+        < !--% CET anual-- >
+        <div class="input-group w-75">
+
+            <input class="form-control" id="cetAnuPct" pattern="[0-9]*" inputmode="numeric" type="text"
+                placeholder="CET Anual">
+            <div class="input-group-append">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+        <!--fim % CET anual-- >
+
+        < !--valor CET anual-- >
+        <div class="input-group w-75">
+            <div class="input-group-pretend">
+                <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" id="vCetAnu" type="text" pattern="[0-9]*" inputmode="numeric"
+                placeholder="Valor CET Anual">
+
+
+        </div>
+        <!--fim valor CET anual-- >
+
+
+        <div class="btnAlign">
+
+            <button class="btn btn-danger  mt-5" onclick="goBack()">VOLTAR</button>
+        </div>
+
+
+
+    </div>
+
+
+    </script>
+
+    </div>
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+    <!-- End your project here-->
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>
