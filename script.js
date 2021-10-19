@@ -155,14 +155,14 @@ function gerarScriptBacenAvista() {
   //Valor CET Mensal
   var valorCetM = document.getElementById('vCetMens')
   valorCetM = Number(valorCetM.value)
-  var valorCetMensal = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  var valorCetMensal = valorCetM.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
   // CET Anual
   var cetAporcet = document.getElementById('cetAnuPct')
   var cetPorcentagemAnual = Number(cetAporcet.value)
   //Valor CET Anual
   var valorCetA = document.getElementById('vCetAnu')
   valorCetA = Number(valorCetA.value)
-  var valorCetAnual = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  var valorCetAnual = valorCetA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   res.innerHTML = `<h2 class="mt-2">Bacen A vista</h2>
 <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de ${valorTotal} </p>
@@ -413,15 +413,14 @@ function gerarScriptBacenComEntrada() {
   //Valor CET Mensal
   var valorCetM = document.getElementById('vCetMens')
   valorCetM = Number(valorCetM.value)
-  var valorCetMensal = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-
+  var valorCetMensal = valorCetM.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
   // CET Anual
   var cetAporcet = document.getElementById('cetAnuPct')
   var cetPorcentagemAnual = Number(cetAporcet.value)
   //Valor CET Anual
   var valorCetA = document.getElementById('vCetAnu')
   valorCetA = Number(valorCetA.value)
-  var valorCetAnual = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  var valorCetAnual = valorCetA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
 
   res.innerHTML = `
@@ -636,15 +635,14 @@ function gerarScriptBacenSementrada() {
   //Valor CET Mensal
   var valorCetM = document.getElementById('vCetMens')
   valorCetM = Number(valorCetM.value)
-  var valorCetMensal = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-
+  var valorCetMensal = valorCetM.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
   // CET Anual
   var cetAporcet = document.getElementById('cetAnuPct')
   var cetPorcentagemAnual = Number(cetAporcet.value)
   //Valor CET Anual
   var valorCetA = document.getElementById('vCetAnu')
   valorCetA = Number(valorCetA.value)
-  var valorCetAnual = vTot.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  var valorCetAnual = valorCetA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   res.innerHTML = `
 <h2 class="mt-2">Sem entrada</h2>
