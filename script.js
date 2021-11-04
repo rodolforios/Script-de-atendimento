@@ -1,6 +1,6 @@
 
 
-
+//função copiar do gerador bacen
 
 //função para retornar para a página anterior
 function goBack() {
@@ -165,17 +165,20 @@ function gerarScriptBacenAvista() {
   var valorCetAnual = valorCetA.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   res.innerHTML = `<h2 class="mt-2">Bacen A vista</h2>
+  <button class="btn" data-clipboard-target=".copyTo">
+    <img src="assets/clippy.svg" alt="Copy to clipboard">
+</button
+<div class="btn copyTo">
 <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de ${valorTotal} </p>
 <p>Com desconto de ${desconto}% (por cento - quando houver).</p>
 <p>"Assim, estou confirmando em sistema o ACORDO de seu cartão (nome e bandeira do cartão)</p>
 <p>Com pagamento á vista de ${valorVista}</p>
 <p>Com vencimento para o dia ${dataFormatada}</p>
-<p>"Neste acordo está inclusa a ${taxaDeJuros}% por cento ao mês." </p>
-<h3 class="mt-2">Custo Efetivo Total</h3>
+<p>"Neste acordo está inclusa a taxa de juros de  ${taxaDeJuros}% mensal." </p>
+
 <p>Com Custo Efetivo Total mensal de ${cetPorcentagemMensal}% , sendo ${valorCetMensal}</p>
 <p>E Custo Efetivo Total anual ${cetPorcentagemAnual}% sendo ${valorCetAnual}</p>
-<em>- Se o CET estiver zerado (0,00%) ou estiver negativo: "para esta renegociação não gerou Custo Efetivo Total
-    Anual e Mensal"</em>
+
 <p>"Os pagamentos devem ser efetuados sempre em dias úteis, exatamente do valor acordado em reais e centavos,
     (sem arredondar) para evitar a quebra do acordo; não sendo possível fazer o cancelamento.”</p>
 <p>O Sr. (a) me autoriza a confirmar em sistema?</p>
@@ -185,7 +188,7 @@ function gerarScriptBacenAvista() {
     Atendimento 5 (cinco) dias úteis após o último pagamento para verificar as condições de seu cartão.
 </p>
 
-
+</div>
 <div class="btnAlign">
 
         <button class="btn btn-danger  mt-5" onclick="goBack()">VOLTAR</button>
@@ -442,12 +445,11 @@ function gerarScriptBacenComEntrada() {
             demais vencimentos para todo dia ${primeiroVencimento[0]}${primeiroVencimento[1]}."
         </p>
 
-        <p>"Neste acordo está inclusa a ${taxaDeJuros}% por cento ao mês." </p>
-        <h3 class="mt-2">Custo Efetivo Total</h3>
+        <p>"Neste acordo está inclusa a taxa de juros de ${taxaDeJuros}% mensal." </p>
+        
         <p>Com Custo Efetivo Total mensal de ${cetPorcentagemMensal}% , sendo ${valorCetMensal}</p>
         <p>E Custo Efetivo Total anual ${cetPorcentagemAnual}% sendo ${valorCetAnual}</p>
-        <em>- Se o CET estiver zerado (0,00%) ou estiver negativo: "para esta renegociação não gerou Custo Efetivo Total
-            Anual e Mensal"</em>
+        
         <p>"Os pagamentos devem ser efetuados sempre em dias úteis, exatamente do valor acordado em reais e centavos,
             (sem arredondar) para evitar a quebra do acordo; não sendo possível fazer o cancelamento.”</p>
         <p>O Sr. (a) me autoriza a confirmar em sistema?</p>
@@ -657,7 +659,7 @@ function gerarScriptBacenSementrada() {
         
 
 
-        <p>"Neste acordo está inclusa a taxa ${taxaDeJuros}% por cento ao mês." </p>
+        <p>Neste acordo está inclusa a taxa de juros de ${taxaDeJuros}% mensal. </p>
         <h3 class="mt-2">Custo Efetivo Total</h3>
         <p>Com Custo Efetivo Total mensal de ${cetPorcentagemMensal}% , sendo ${valorCetMensal}</p>
         <p>E Custo Efetivo Total anual ${cetPorcentagemAnual}% sendo ${valorCetAnual}</p>
@@ -682,7 +684,7 @@ function gerarScriptBacenSementrada() {
 
 }
 
-
+//script bacen padrão
 
 function Avista() {
 

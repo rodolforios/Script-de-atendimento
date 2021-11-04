@@ -25,132 +25,44 @@
     <!-- Start your project here-->
     <div class="containerPrincipal">
         
-        < !--Valor total-- >
-        <div class="input-group w-75">
-            <div class="input-group-pretend">
-                <span class="input-group-text">R$</span>
-            </div>
-            <input class="form-control" id="vTot" type="text" pattern="[0-9]*" inputmode="numeric"
-                placeholder="Valor total">
-
-        </div>
-        <!--Fim Valor total-- >
-
-        < !--Desconto -->
-        <div class="input-group w-75">
-
-            <input class="form-control" id="desc" pattern="[0-9]*" inputmode="numeric" type="text"
-                placeholder="Desconto">
-            <div class="input-group-append">
-                <span class="input-group-text">%</span>
-            </div>
-        </div>
-        <!--Fim desconto-->
-
-         <!--Valor Primeira parcela-- >
-        <div class="input-group w-75">
-            <div class="input-group-pretend">
-                <span class="input-group-text">R$</span>
-            </div>
-            <input class="form-control" id="vE" type="text" pattern="[0-9]*" inputmode="numeric"
-                placeholder="Valor Primeira parcela">
-
-        </div>
-        <!--Fim valor Primeira parcela-- >
         
+        <h2 class="mt-2">Bacen A vista</h2>
+        <button onclick="copiarTexto()">Copy text</button>
+        <div id="myInput">
 
-        < !--Data Primeira parcela-- >
-        <div class="form-outline w-75">
+            <p>"Sr. informo que o acordo refere-se ao valor total de seu cartão, que é de ${valorTotal} </p>
+            <p>Com desconto de ${desconto}%.</p>
+            <p>"Assim, estou confirmando em sistema o ACORDO de seu cartão (nome e bandeira do cartão)</p>
+            <p>Com pagamento á vista de ${valorVista}</p>
+            <p>Com vencimento para o dia ${dataFormatada}</p>
+            <p>"Neste acordo está inclusa a taxa de juros de ${taxaDeJuros}% mensal." </p>
 
-            <div class="form-outline">
-                <input type="date" id="venc" class="form-control" />
-                <label class="form-label" for="form1">Data da Primeira📆</label>
-            </div>
+            <p>Com Custo Efetivo Total mensal de ${cetPorcentagemMensal}% , sendo ${valorCetMensal}</p>
+            <p>E Custo Efetivo Total anual ${cetPorcentagemAnual}% sendo ${valorCetAnual}</p>
 
-
-        </div>
-        <!--fim data Primeira parcela-- >
-
-        < !--quantidade de parcelas-- >
-        <div class="input-group w-75">
-
-            <input class="form-control" id="qtP" type="text" pattern="[0-9]*" inputmode="numeric"
-                placeholder="Quantidade de parcelas">
-
-        </div>
-
-        <!--Fim quantidade de parcelas-- >
-
-               < !--taxa de juros mês-- >
-        <div class="input-group w-75">
-
-            <input class="form-control" id="tJuros" pattern="[0-9]*" inputmode="numeric" type="text"
-                placeholder="Taxa de juros Mês">
-            <div class="input-group-append">
-                <span class="input-group-text">%</span>
-            </div>
-        </div>
-        <!--Fim taxa de juros mês-- >
-
-        < !--% CET mensal-- >
-        <div class="input-group w-75">
-
-            <input class="form-control" id="cetMenPct" pattern="[0-9]*" inputmode="numeric" type="text"
-                placeholder="CET Mensal">
-            <div class="input-group-append">
-                <span class="input-group-text">%</span>
-            </div>
-        </div>
-        <!--fim % CET mensal-- >
-
-        < !--valor CET mensal-- >
-        <div class="input-group w-75">
-            <div class="input-group-pretend">
-                <span class="input-group-text">R$</span>
-            </div>
-            <input class="form-control" id="vCetMens" type="text" pattern="[0-9]*" inputmode="numeric"
-                placeholder="Valor CET Mensal">
+            <p>"Os pagamentos devem ser efetuados sempre em dias úteis, exatamente do valor acordado em reais e
+                centavos,
+                (sem arredondar) para evitar a quebra do acordo; não sendo possível fazer o cancelamento.”</p>
+            <p>O Sr. (a) me autoriza a confirmar em sistema?</p>
+            <p>Informo que as restrições EXTERNAS são retiradas em até 5 dias úteis após o pagamento do valor combinado.
+            </p>
+            <p>
+                Seu cartão ficará bloqueado até o termino do acordo, sendo necessário retornar o contato com a Central
+                de
+                Atendimento 5 (cinco) dias úteis após o último pagamento para verificar as condições de seu cartão.
+            </p>
 
         </div>
-        <!--fim valor Cet mensal-- >
-
-        < !--% CET anual-- >
-        <div class="input-group w-75">
-
-            <input class="form-control" id="cetAnuPct" pattern="[0-9]*" inputmode="numeric" type="text"
-                placeholder="CET Anual">
-            <div class="input-group-append">
-                <span class="input-group-text">%</span>
-            </div>
-        </div>
-        <!--fim % CET anual-- >
-
-        < !--valor CET anual-- >
-        <div class="input-group w-75">
-            <div class="input-group-pretend">
-                <span class="input-group-text">R$</span>
-            </div>
-            <input class="form-control" id="vCetAnu" type="text" pattern="[0-9]*" inputmode="numeric"
-                placeholder="Valor CET Anual">
-
-
-        </div>
-        <!--fim valor CET anual-- >
-
-
         <div class="btnAlign">
 
             <button class="btn btn-danger  mt-5" onclick="goBack()">VOLTAR</button>
         </div>
 
 
-
     </div>
 
 
-    </script>
 
-    </div>
     <script>
         function goBack() {
             window.history.back()
@@ -163,6 +75,7 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
